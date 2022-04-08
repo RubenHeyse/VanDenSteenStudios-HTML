@@ -1,0 +1,105 @@
+body{
+    font-family: monospace;
+    color: white;
+    background-color: #1D1E20;
+    margin: -1.5em 0em;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin-left: 4em;
+    max-width: 200px;
+}
+
+.heroImageWrapper{
+    background-image: url(../assets/robonotts_hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+#header-text{
+    color: whitesmoke;
+}
+
+.textBlock{
+    list-style: none;
+    padding: 0;
+    justify-content: start;
+    position: absolute;
+    bottom: 4em;
+    left: 4em;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.heroTitleWrapper{
+    margin-bottom: -1em;
+}
+
+.heroTitle{
+    font-size: 4em;
+}
+
+.heroBody{
+    margin-bottom: 2em;
+}
+
+.heroBodyWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: red;
+}
+
+.social-logo{
+    max-width: 80px;
+    margin-right: 2em;
+}
+
+@media (max-width: 768px) {
+
+    .logo{
+        margin-left: 2em;
+    }
+
+    .textBlock{
+        left: 2em;
+    }
+
+    .heroTitle{
+        font-size: 2em;
+    }
+
+    .social-logo{
+        max-width: 50px;
+        margin-top: 1em;
+        margin-right: 2em;
+    }
+}
+
+
