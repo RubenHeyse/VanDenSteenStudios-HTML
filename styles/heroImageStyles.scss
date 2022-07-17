@@ -13,20 +13,22 @@ body{
 .nav{
     width: 100vw;
     height: 80px;
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 1em 0;
 }
 
 .logo{
     margin-left: 4em;
-    max-width: 200px;
+    height: 100%;
 }
 
 .heroImageWrapper{
-    background-image: url(../assets/robonotts_hero.png);
-    background-position: center;
+    background-image: url(../assets/hero/vdss_hero.jpg); /* fallback */
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/hero/vdss_hero.jpg);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -78,7 +80,7 @@ a:hover{
 }
 
 .social-logo{
-    max-width: 80px;
+    max-width: 60px;
     margin-right: 2em;
 }
 
@@ -86,6 +88,12 @@ a:hover{
 
     .logo{
         margin-left: 2em;
+    }
+
+    .heroImageWrapper{
+        background-image: url(../assets/hero/vdss_hero_mobile.jpg); /* fallback */
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url(../assets/hero/vdss_hero_mobile.jpg);
+        background-position: center;
     }
 
     .textBlock{
@@ -97,7 +105,7 @@ a:hover{
     }
 
     .social-logo{
-        max-width: 50px;
+        max-width: 70px;
         margin-top: 1em;
         margin-right: 2em;
     }
